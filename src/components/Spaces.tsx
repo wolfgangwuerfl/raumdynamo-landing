@@ -9,9 +9,10 @@ interface SpaceCardProps {
   capacity: string;
   size: string;
   features: string[];
+  target: string;
 }
 
-const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, size, features }) => {
+const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, size, features, target }) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100 animate-fade-in">
       <div className="h-64 overflow-hidden relative">
@@ -44,7 +45,7 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
         </ul>
         
         <a 
-          href="#contact" 
+          href={target} 
           className="inline-flex items-center text-raumfabrik-blue hover:text-raumfabrik-blue-dark"
         >
           <span className="mr-1">Jetzt buchen</span>
@@ -68,7 +69,8 @@ const Spaces: React.FC = () => {
         "24/7 Zugang",
         "Inklusive Nebenkosten",
         "Meetingräume buchbar"
-      ]
+      ],
+      target: "https://raumfabrik.simplybook.it/v2/#book/service/2"
     },
     {
       image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -80,7 +82,8 @@ const Spaces: React.FC = () => {
         "Moderne Präsentationstechnik",
         "Flexible Bestuhlung",
         "Catering-Option"
-      ]
+      ],
+      target: "https://raumfabrik.simplybook.it/v2/#book/service/1"
     },
     {
       image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -90,7 +93,8 @@ const Spaces: React.FC = () => {
       size: "150-400 m²",
       features: [
         "Parkplätze auf dem Gelände sind umzäunt",
-      ]
+      ],
+      target: ""
     }
   ];
 
@@ -117,6 +121,7 @@ const Spaces: React.FC = () => {
               capacity={space.capacity}
               size={space.size}
               features={space.features}
+              target={space.target}
             />
           ))}
         </div>
