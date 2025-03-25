@@ -47,7 +47,7 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
           href="#contact" 
           className="inline-flex items-center text-raumfabrik-blue hover:text-raumfabrik-blue-dark"
         >
-          <span className="mr-1">Jetzt anfragen</span>
+          <span className="mr-1">Jetzt buchen</span>
           <ArrowRight size={16} />
         </a>
       </div>
