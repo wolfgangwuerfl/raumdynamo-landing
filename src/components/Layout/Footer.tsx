@@ -6,6 +6,10 @@ import ImpressumDialog from '../ImpressumDialog';
 import AGBDialog from '../AGBDialog';
 import DatenschutzDialog from '../DatenschutzDialog';
 import CookieDialog from '../CookieDialog';
+import UeberUnsDialog from '../UeberUnsDialog';
+import TeamDialog from '../TeamDialog';
+import KarriereDialog from '../KarriereDialog';
+import PresseDialog from '../PresseDialog';
 
 const Footer: React.FC = () => {
   return (
@@ -37,16 +41,24 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-lg mb-4">Raumfabrik</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Über uns</a>
+                <UeberUnsDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Über uns</a>
+                </UeberUnsDialog>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Team</a>
+                <TeamDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Team</a>
+                </TeamDialog>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Karriere</a>
+                <KarriereDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Karriere</a>
+                </KarriereDialog>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Pressemitteilungen</a>
+                <PresseDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Pressemitteilungen</a>
+                </PresseDialog>
               </li>
             </ul>
           </div>
