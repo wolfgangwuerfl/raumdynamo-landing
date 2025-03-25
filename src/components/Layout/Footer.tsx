@@ -3,6 +3,9 @@ import React from 'react';
 import LogoIcon from '../LogoIcon';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 import ImpressumDialog from '../ImpressumDialog';
+import AGBDialog from '../AGBDialog';
+import DatenschutzDialog from '../DatenschutzDialog';
+import CookieDialog from '../CookieDialog';
 
 const Footer: React.FC = () => {
   return (
@@ -70,10 +73,14 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold text-lg mb-4">Rechtliches</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">AGB</a>
+                <AGBDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">AGB</a>
+                </AGBDialog>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Datenschutz</a>
+                <DatenschutzDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Datenschutz</a>
+                </DatenschutzDialog>
               </li>
               <li>
                 <ImpressumDialog>
@@ -81,7 +88,9 @@ const Footer: React.FC = () => {
                 </ImpressumDialog>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Cookie-Einstellungen</a>
+                <CookieDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Cookie-Einstellungen</a>
+                </CookieDialog>
               </li>
             </ul>
           </div>
