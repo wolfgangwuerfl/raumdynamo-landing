@@ -2,6 +2,7 @@
 import React from 'react';
 import LogoIcon from '../LogoIcon';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import ImpressumDialog from '../ImpressumDialog';
 
 const Footer: React.FC = () => {
   return (
@@ -75,7 +76,9 @@ const Footer: React.FC = () => {
                 <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Datenschutz</a>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Impressum</a>
+                <ImpressumDialog>
+                  <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Impressum</a>
+                </ImpressumDialog>
               </li>
               <li>
                 <a href="#" className="text-gray-600 hover:text-raumfabrik-blue transition-colors">Cookie-Einstellungen</a>
