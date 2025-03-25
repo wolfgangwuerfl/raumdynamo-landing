@@ -60,11 +60,11 @@ const Spaces: React.FC = () => {
     {
       image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       title: "Büroräume",
-      price: "Ab 350€ pro Monat",
+      price: "Ab 200€ pro Monat",
       capacity: "1-10 Personen",
       size: "20-100 m²",
       features: [
-        "Vollständig möbliert",
+        "Teilweise möbliert",
         "24/7 Zugang",
         "Inklusive Nebenkosten",
         "Meetingräume buchbar"
@@ -79,21 +79,17 @@ const Spaces: React.FC = () => {
       features: [
         "Moderne Präsentationstechnik",
         "Flexible Bestuhlung",
-        "Catering-Option",
-        "Klimatisiert"
+        "Catering-Option"
       ]
     },
     {
       image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Eventflächen",
-      price: "Ab 800€ pro Tag",
-      capacity: "Bis 200 Personen",
+      title: "Parkplätze",
+      price: "Für Mieter kostenlos",
+      capacity: "Bis 100 Personen",
       size: "150-400 m²",
       features: [
-        "Großzügige, offene Flächen",
-        "Veranstaltungstechnik",
-        "Cateringfläche",
-        "Parkplätze vorhanden"
+        "Parkplätze auf dem Gelände sind umzäunt",
       ]
     }
   ];

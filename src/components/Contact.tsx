@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Adresse</p>
-                    <p className="text-gray-600">Musterstraße 123, 12345 Musterstadt</p>
+                    <p className="text-gray-600">Allendestr. 68, 98574 Schmalkalden</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">Telefon</p>
-                    <p className="text-gray-600">+49 123 456789</p>
+                    <p className="text-gray-600">+49 03683 798 400</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-medium">E-Mail</p>
-                    <p className="text-gray-600">info@raumfabrik.de</p>
+                    <p className="text-gray-600">info@raumfabrik.gmbh</p>
                   </div>
                 </div>
                 <div className="flex items-start">

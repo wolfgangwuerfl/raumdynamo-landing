@@ -27,40 +27,40 @@ const ImpressumDialog: React.FC<ImpressumDialogProps> = ({ children }) => {
           <section>
             <h3 className="text-lg font-semibold mb-2">Angaben gemäß § 5 TMG</h3>
             <p>Raumfabrik GmbH<br />
-            Musterstraße 123<br />
-            12345 Musterstadt<br />
+            Allendestr. 68<br />
+            98574 Schmalkalden<br />
             Deutschland</p>
           </section>
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Kontakt</h3>
-            <p>Telefon: +49 (0) 123 456789<br />
+            <p>Telefon: +49 (0) 03683 798 400<br />
             E-Mail: info@raumfabrik.de</p>
           </section>
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Vertretungsberechtigte</h3>
-            <p>Geschäftsführer: Max Mustermann</p>
+            <p>Geschäftsführer: Michael Arndt</p>
           </section>
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Registereintrag</h3>
             <p>Eintragung im Handelsregister.<br />
-            Registergericht: Amtsgericht Musterstadt<br />
-            Registernummer: HRB 12345</p>
+            Registergericht: Amtsgericht WIP<br />
+            Registernummer: HRB WIP</p>
           </section>
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Umsatzsteuer-ID</h3>
             <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            DE123456789</p>
+            DE WIP *work in progress*</p>
           </section>
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
-            <p>Max Mustermann<br />
-            Musterstraße 123<br />
-            12345 Musterstadt<br />
+            <p>Michael Arndt<br />
+            Allendestr. 68<br />
+            98574 Schmalkalden<br />
             Deutschland</p>
           </section>
         </div>
