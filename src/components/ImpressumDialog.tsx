@@ -46,8 +46,8 @@ const ImpressumDialog: React.FC<ImpressumDialogProps> = ({ children }) => {
           <section>
             <h3 className="text-lg font-semibold mb-2">Registereintrag</h3>
             <p>Eintragung im Handelsregister.<br />
-            Registergericht: Amtsgericht WIP<br />
-            Registernummer: HRB WIP</p>
+            Registergericht: Amtsgericht Jena<br />
+            Registernummer: HRB 509939</p>
           </section>
           
           <section>
