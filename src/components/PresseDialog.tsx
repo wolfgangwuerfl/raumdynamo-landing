@@ -47,7 +47,7 @@ const PresseDialog: React.FC<PresseDialogProps> = ({ children }) => {
             </div>
           </section>
           
-          <section>
+{/*           <section>
             <h3 className="text-lg font-semibold mb-2">Pressekontakt</h3>
             <div>
               <p><strong>Julia Müller</strong></p>
@@ -65,7 +65,7 @@ const PresseDialog: React.FC<PresseDialogProps> = ({ children }) => {
               <button className="px-3 py-1 border border-gray-300 rounded text-sm">Bilder</button>
               <button className="px-3 py-1 border border-gray-300 rounded text-sm">Factsheets</button>
             </div>
-          </section>
+          </section> */}
         </div>
       </DialogContent>
     </Dialog>
