@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
+import { Button } from './ui/button';
 
 const Hero: React.FC = () => {
   return (
@@ -23,6 +24,14 @@ const Hero: React.FC = () => {
               className="px-6 py-3 bg-raumfabrik-blue text-white rounded-md hover:bg-raumfabrik-blue-dark transition-colors shadow-md"
             >
               Räume entdecken
+            </a>
+            <a
+              href="https://raumfabrik.simplybook.it/v2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors shadow-md"
+            >
+              Jetzt Räume buchen
             </a>
             <a
               href="#contact"
