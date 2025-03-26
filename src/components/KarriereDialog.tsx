@@ -33,26 +33,12 @@ const KarriereDialog: React.FC<KarriereDialogProps> = ({ children }) => {
           <section>
             <h3 className="text-lg font-semibold mb-2">Offene Stellen</h3>
             <div className="space-y-4">
-              <div className="p-4 border border-gray-200 rounded-lg">
+{/*               <div className="p-4 border border-gray-200 rounded-lg">
                 <h4 className="font-medium">Standortmanager (m/w/d) - Hamburg</h4>
                 <p className="text-sm text-gray-600 mb-2">Vollzeit | Ab sofort</p>
                 <p className="mb-3">Für unseren neuen Standort in Hamburg suchen wir einen engagierten Standortmanager, der den Aufbau und die Betreuung des Standorts verantwortet.</p>
                 <Button variant="outline" size="sm">Mehr erfahren</Button>
-              </div>
-              
-              <div className="p-4 border border-gray-200 rounded-lg">
-                <h4 className="font-medium">Community Manager (m/w/d) - Berlin</h4>
-                <p className="text-sm text-gray-600 mb-2">Teilzeit | Ab sofort</p>
-                <p className="mb-3">Als Community Manager bist du die Schnittstelle zwischen unseren Mietern und der Raumfabrik. Du organisierst Events und sorgst für eine lebendige Community.</p>
-                <Button variant="outline" size="sm">Mehr erfahren</Button>
-              </div>
-              
-              <div className="p-4 border border-gray-200 rounded-lg">
-                <h4 className="font-medium">Marketing Manager (m/w/d) - Remote</h4>
-                <p className="text-sm text-gray-600 mb-2">Vollzeit | Ab Januar 2024</p>
-                <p className="mb-3">Zur Verstärkung unseres Marketing-Teams suchen wir einen erfahrenen Marketing Manager, der unsere Marke weiterentwickelt und unsere Außendarstellung optimiert.</p>
-                <Button variant="outline" size="sm">Mehr erfahren</Button>
-              </div>
+              </div> */}
             </div>
           </section>
           

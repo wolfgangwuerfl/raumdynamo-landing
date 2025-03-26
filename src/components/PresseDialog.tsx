@@ -28,12 +28,12 @@ const PresseDialog: React.FC<PresseDialogProps> = ({ children }) => {
             <h3 className="text-lg font-semibold mb-2">Aktuelle Pressemitteilungen</h3>
             <div className="space-y-6">
               <article>
-                <h4 className="font-medium">Raumfabrik eröffnet neuen Standort in Hamburg</h4>
-                <p className="text-sm text-gray-600 mb-2">15. November 2023</p>
-                <p>Die Raumfabrik expandiert weiter und eröffnet im Januar 2024 ihren neuen Standort im Herzen von Hamburg. Auf über 2.500 Quadratmetern entstehen moderne Büros, Coworking-Bereiche und Eventflächen für die kreative und digitale Wirtschaft.</p>
+                <h4 className="font-medium">Raumfabrik eröffnet neuen Standort in Schmalkalden</h4>
+                <p className="text-sm text-gray-600 mb-2">2025</p>
+                <p>Die Raumfabrik übernimmt das ehemalige Technologie- und Gründerzentrum in Schmalkalden.</p>
               </article>
               
-              <article>
+{/*               <article>
                 <h4 className="font-medium">Nachhaltigkeitszertifizierung für alle Raumfabrik-Standorte</h4>
                 <p className="text-sm text-gray-600 mb-2">23. September 2023</p>
                 <p>Als eines der ersten Unternehmen in der Branche hat die Raumfabrik für alle ihre Standorte die DGNB-Zertifizierung in Gold erhalten. Die Auszeichnung bestätigt die konsequente Umsetzung von Nachhaltigkeitskonzepten in allen Bereichen.</p>
@@ -43,7 +43,7 @@ const PresseDialog: React.FC<PresseDialogProps> = ({ children }) => {
                 <h4 className="font-medium">Partnerschaft mit Tech-Inkubator StartupBoost</h4>
                 <p className="text-sm text-gray-600 mb-2">05. Juli 2023</p>
                 <p>Die Raumfabrik und der Tech-Inkubator StartupBoost geben ihre strategische Partnerschaft bekannt. Ziel ist es, jungen Tech-Unternehmen optimale Wachstumsbedingungen zu bieten und ein innovatives Ökosystem an allen Raumfabrik-Standorten zu fördern.</p>
-              </article>
+              </article> */}
             </div>
           </section>
           

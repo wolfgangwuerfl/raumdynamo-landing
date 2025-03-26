@@ -26,7 +26,7 @@ const UeberUnsDialog: React.FC<UeberUnsDialogProps> = ({ children }) => {
         <div className="py-4 space-y-6 text-gray-700">
           <section>
             <h3 className="text-lg font-semibold mb-2">Unsere Geschichte</h3>
-            <p>Die Raumfabrik wurde 2010 mit einer Vision gegründet: Moderne, flexible Arbeitsräume für Unternehmen jeder Größe anzubieten. Seitdem sind wir kontinuierlich gewachsen und haben uns als führender Anbieter von Büro- und Veranstaltungsflächen etabliert.</p>
+            <p>Die Raumfabrik wurde 2025 mit einer Vision gegründet: Moderne, flexible Arbeitsräume für Unternehmen jeder Größe anzubieten. Seitdem wachsen wir kontinuierlich und sind durch die Übernahme des ehemaligen Technologie- und Gründerzentrums weiterhin führender Anbieter von Büro- und Veranstaltungsflächen.</p>
           </section>
           
           <section>
@@ -36,7 +36,7 @@ const UeberUnsDialog: React.FC<UeberUnsDialogProps> = ({ children }) => {
           
           <section>
             <h3 className="text-lg font-semibold mb-2">Nachhaltigkeit</h3>
-            <p>Nachhaltigkeit ist für uns kein Schlagwort, sondern eine Verpflichtung. Alle unsere Gebäude werden nach höchsten Umweltstandards betrieben. Wir nutzen erneuerbare Energien, setzen auf umweltfreundliche Materialien und minimieren unseren ökologischen Fußabdruck.</p>
+            <p>Nachhaltigkeit ist für uns kein Schlagwort, sondern eine Verpflichtung. Alle unsere Gebäude werden nach höchsten Umweltstandards betrieben. Wir nutzen erneuerbare Energien, bieten Mietern günstigere Mieterstromtarife aus Solar an, bieten Elektroladestationen und setzen auf umweltfreundliche Materialien und minimieren unseren ökologischen Fußabdruck.</p>
           </section>
           
           <section>

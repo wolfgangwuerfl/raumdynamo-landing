@@ -89,8 +89,8 @@ const Spaces: React.FC = () => {
       image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       title: "Parkplätze",
       price: "Für Mieter kostenlos",
-      capacity: "Bis 100 Personen",
-      size: "150-400 m²",
+      capacity: "Bis 50 Fahrzeuge",
+      size: "800-1200 m²",
       features: [
         "Parkplätze auf dem Gelände sind umzäunt",
       ],
