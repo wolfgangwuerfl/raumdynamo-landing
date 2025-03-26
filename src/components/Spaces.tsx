@@ -74,7 +74,7 @@ const Spaces: React.FC = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Konferenzräume",
+      title: "Konferenz/Schulungsräume",
       price: "Ab 30€ pro Stunde",
       capacity: "2-30 Personen",
       size: "25-100 m²",
@@ -98,39 +98,37 @@ const Spaces: React.FC = () => {
     },
     {
       image: "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Eventflächen",
-      price: "Ab 400€ pro Tag",
+      title: "Cafeteria",
+      price: "Ab 200€ pro Tag",
       capacity: "Bis 100 Personen",
-      size: "150-300 m²",
+      size: "100 m²",
       features: [
         "Flexible Raumgestaltung",
         "Eigene Catering-Küche",
-        "Veranstaltungstechnik verfügbar"
+        "Veranstaltungstechnik verfügbar",
+        "Networking Events möglich"
       ],
       target: "https://raumfabrik.simplybook.it/v2/#book/service/3"
     },
     {
       image: "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Coworking",
+      title: "Ausstellungs- und Eventflächen",
       price: "Ab 15€ pro Tag",
       capacity: "Flexibel",
       size: "Diverse Bereiche",
       features: [
         "WLAN & Drucker inklusive",
-        "Kaffee & Tee kostenlos",
-        "Networking-Events"
       ],
       target: "https://raumfabrik.simplybook.it/v2/#book/service/4"
     },
     {
       image: "https://images.unsplash.com/photo-1572025442646-866d16c84a54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      title: "Lagerflächen",
-      price: "Ab 80€ pro Monat",
+      title: "Ladestationen für Elektrofahrzeuge",
+      price: "individuell",
       capacity: "Diverses Volumen",
-      size: "5-50 m²",
+      size: "6 Ladestationen",
       features: [
         "24/7 Zugang",
-        "Temperaturkontrolliert",
         "Sicherheitsüberwachung"
       ],
       target: "https://raumfabrik.simplybook.it/v2/#book/service/5"
