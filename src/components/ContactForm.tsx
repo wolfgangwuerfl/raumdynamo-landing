@@ -43,13 +43,40 @@ const ContactForm = () => {
   const onSubmit = async (values: FormValues) => {
     // Simulation des Sendens einer E-Mail
     console.log('Sende E-Mail an info@raumfabrik.gmbh mit den Daten:', values);
-    
+    console.log(values);
     // In einer realen Anwendung würde hier eine API-Anfrage gemacht werden
     // Diese Simulation zeigt nur den erfolgreichen Ablauf
     try {
       // Simuliere API-Call mit einer Verzögerung
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      //await new Promise(resolve => setTimeout(resolve, 1000));
+
+/*       fetch('https://www.pro-energie-ag.de/mail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+*/
+      fetch("https://www.pro-energie-ag.de/mail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(values)
+      })
+      .then(response => response.json())
+      //.then(data => console.log(data.success ? "Erfolgreich gesendet!" : "Fehler beim Senden"));
+      .then(data => {
+        if (data.success) {
+            console.log("erfolgreich gesendet");
+        } else {
+            toast({
+                title: "Fehler bei der Datenübertragung",
+                description: "Es gab ein Problem bei der Erstellung ihrer Nachricht. Bitte versuchen Sie es später erneut.",
+                variant: "destructive",
+            });
+        }
+      }) 
+             
       toast({
         title: "Nachricht gesendet",
         description: "Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.",
@@ -59,11 +86,11 @@ const ContactForm = () => {
       // Formular zurücksetzen
       form.reset();
     } catch (error) {
-      toast({
-        title: "Fehler beim Senden",
-        description: "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.",
-        variant: "destructive",
-      });
+        toast({
+          title: "Fehler beim Senden",
+          description: "Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.",
+          variant: "destructive",
+        });
     }
   };
 

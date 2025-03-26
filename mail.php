@@ -1,9 +1,28 @@
 <?php
+
+header("Access-Control-Allow-Origin: *"); // Erlaubt alle Domains (Achtung: Sicherheit beachten!)
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+
+//mail("wuerfl@it-wuerfl.de","hallo kontakt", "dies ist eine Message", "From: info@raumfabrik.gmbh");
+
+file_put_contents('log.txt', print_r($_POST, true), FILE_APPEND);
+
+//mail("wuerfl@it-wuerfl.de","hallo kontakt", "dies ist eine Message", "From: info@raumfabrik.gmbh");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "empfänger@example.com";
-    $subject = "Kontaktformular";
+    $to = "info@raumfabrik.gmbh";
+    $subject = "Anfrage über Kontaktformular ". $_POST['subject'];
     $message = "Name: " . $_POST["name"] . "\nE-Mail: " . $_POST["email"] . "\nNachricht: " . $_POST["message"];
-    $headers = "From: webmaster@example.com";
+    //$headers = "From: ". $_POST['email']."\r\n"."Content-type: text/html; charset=UTF-8";
+    $headers = "From: ".$_POST['email']."\r\n".
+           "MIME-Version: 1.0\r\n".
+           "Content-Type: text/plain; charset=UTF-8\r\n".
+           "Content-Transfer-Encoding: 8bit";
+
+    $subject = mb_encode_mimeheader($subject, "UTF-8", "B");
+    $message = mb_convert_encoding($message, "UTF-8", "auto");
 
     if (mail($to, $subject, $message, $headers)) {
         echo json_encode(["success" => true]);
@@ -41,6 +60,4 @@ try {
 } catch (Exception $e) {
     echo "Fehler: {$mail->ErrorInfo}";
 } */
-?>
-
 ?>
