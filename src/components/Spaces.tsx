@@ -75,7 +75,7 @@ const Spaces: React.FC = () => {
     {
       image: "/lovable-uploads/Schulungsraum_big.jpg",
       title: "Konferenz/Schulungsräume",
-      price: "Ab 30€ pro Stunde",
+      price: "Ab 100€ pro Tag",
       capacity: "2-30 Personen",
       size: "25-100 m²",
       features: [
