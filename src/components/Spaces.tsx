@@ -73,7 +73,7 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/service/2"
     },
     {
-      image: "/lovable-uploads/Schulungsraum_big.jpg",
+      image: "/lovable-uploads/resized/Schulungsraum_big.jpg",
       title: "Konferenz/Schulungsräume",
       price: "Ab 100€ pro Tag",
       capacity: "2-30 Personen",
@@ -97,7 +97,7 @@ const Spaces: React.FC = () => {
       target: ""
     },
     {
-      image: "/lovable-uploads/Cafeteria.jpg",
+      image: "/lovable-uploads/resized/Cafeteria.jpg",
       title: "Cafeteria",
       price: "Ab 200€ pro Tag",
       capacity: "Bis 100 Personen",
