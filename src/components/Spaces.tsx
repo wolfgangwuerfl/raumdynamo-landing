@@ -1,6 +1,11 @@
 
 import React, { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, X } from 'lucide-react';
+import { 
+  Dialog, 
+  DialogContent, 
+  DialogTrigger 
+} from "@/components/ui/dialog";
 
 interface SpaceCardProps {
   image: string;
@@ -16,11 +21,34 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100 animate-fade-in">
       <div className="h-64 overflow-hidden relative">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-        />
+        <Dialog>
+          <DialogTrigger asChild>
+            <img 
+              src={image} 
+              alt={title} 
+              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer"
+            />
+          </DialogTrigger>
+          <DialogContent className="p-0 max-w-4xl bg-transparent border-none">
+            <div className="relative">
+              <img 
+                src={image} 
+                alt={title} 
+                className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+              />
+              <button 
+                className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const closeButton = document.querySelector('[data-state="open"] [aria-label="Close"]') as HTMLButtonElement;
+                  if (closeButton) closeButton.click();
+                }}
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -170,11 +198,34 @@ const Spaces: React.FC = () => {
               Unser modernes Gebäude bietet Ihnen eine inspirierende Arbeitsumgebung in grüner Lage mit hervorragender Infrastruktur.
             </p>
             <div className="mt-6">
-              <img 
-                src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png" 
-                alt="Raumfabrik Gebäude" 
-                className="w-full h-auto rounded-lg shadow-md" 
-              />
+              <Dialog>
+                <DialogTrigger asChild>
+                  <img 
+                    src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png" 
+                    alt="Raumfabrik Gebäude" 
+                    className="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" 
+                  />
+                </DialogTrigger>
+                <DialogContent className="p-0 max-w-5xl bg-transparent border-none">
+                  <div className="relative">
+                    <img 
+                      src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png" 
+                      alt="Raumfabrik Gebäude" 
+                      className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                    />
+                    <button 
+                      className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const closeButton = document.querySelector('[data-state="open"] [aria-label="Close"]') as HTMLButtonElement;
+                        if (closeButton) closeButton.click();
+                      }}
+                    >
+                      <X className="h-6 w-6" />
+                    </button>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
