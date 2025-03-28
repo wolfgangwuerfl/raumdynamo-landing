@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import { ArrowRight, X } from 'lucide-react';
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogTrigger 
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger
 } from "@/components/ui/dialog";
 
 interface SpaceCardProps {
@@ -23,20 +23,20 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
       <div className="h-64 overflow-hidden relative">
         <Dialog>
           <DialogTrigger asChild>
-            <img 
-              src={image} 
-              alt={title} 
+            <img
+              src={image}
+              alt={title}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer"
             />
           </DialogTrigger>
           <DialogContent className="p-0 max-w-4xl bg-transparent border-none">
             <div className="relative">
-              <img 
-                src={image} 
-                alt={title} 
+              <img
+                src={image}
+                alt={title}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
               />
-              <button 
+              <button
                 className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
                 onClick={(e) => {
                   e.stopPropagation();
@@ -53,12 +53,12 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <div className="text-raumfabrik-blue mb-4">{price}</div>
-        
+
         <div className="flex justify-between mb-4 text-sm text-gray-600">
           <div>Kapazität: {capacity}</div>
           <div>Größe: {size}</div>
         </div>
-        
+
         <ul className="mb-6 space-y-2">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
@@ -71,9 +71,9 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
             </li>
           ))}
         </ul>
-        
-        <a 
-          href={target} 
+
+        <a
+          href={target}
           className="inline-flex items-center text-raumfabrik-blue hover:text-raumfabrik-blue-dark"
         >
           <span className="mr-1">Jetzt buchen</span>
@@ -190,7 +190,7 @@ const Spaces: React.FC = () => {
             />
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
           <div className="glass-card mx-auto max-w-2xl p-6 md:p-8">
             <h3 className="text-xl font-semibold mb-3">Gebäude und Umgebung</h3>
@@ -200,20 +200,20 @@ const Spaces: React.FC = () => {
             <div className="mt-6">
               <Dialog>
                 <DialogTrigger asChild>
-                  <img 
-                    src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png" 
-                    alt="Raumfabrik Gebäude" 
-                    className="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" 
+                  <img
+                    src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png"
+                    alt="Raumfabrik Gebäude"
+                    className="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
                 <DialogContent className="p-0 max-w-5xl bg-transparent border-none">
                   <div className="relative">
-                    <img 
-                      src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png" 
-                      alt="Raumfabrik Gebäude" 
+                    <img
+                      src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png"
+                      alt="Raumfabrik Gebäude"
                       className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
                     />
-                    <button 
+                    <button
                       className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
                       onClick={(e) => {
                         e.stopPropagation();
