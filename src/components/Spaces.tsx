@@ -87,7 +87,7 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
 const Spaces: React.FC = () => {
   const spaces = [
     {
-      image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "/lovable-uploads/resized/Office.jpg",
       title: "Büroräume",
       price: "Ab 200€ pro Monat",
       capacity: "1-10 Personen",
