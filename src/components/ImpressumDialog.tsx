@@ -51,12 +51,6 @@ const ImpressumDialog: React.FC<ImpressumDialogProps> = ({ children }) => {
           </section>
           
           <section>
-            <h3 className="text-lg font-semibold mb-2">Umsatzsteuer-ID</h3>
-            <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            DE WIP *work in progress*</p>
-          </section>
-          
-          <section>
             <h3 className="text-lg font-semibold mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
             <p>Michael Arndt<br />
             Allendestr. 68<br />
