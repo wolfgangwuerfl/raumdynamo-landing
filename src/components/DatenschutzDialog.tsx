@@ -28,8 +28,8 @@ const DatenschutzDialog: React.FC<DatenschutzDialogProps> = ({ children }) => {
             <h3 className="text-lg font-semibold mb-2">1. Verantwortliche Stelle</h3>
             <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze ist:<br />
             Raumfabrik GmbH<br />
-            Musterstraße 123<br />
-            12345 Musterstadt<br />
+            Allendestr. 68<br />
+            98574 Schmalkalden<br />
             Deutschland</p>
           </section>
           
