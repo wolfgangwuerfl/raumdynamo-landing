@@ -150,7 +150,7 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/service/4"
     },
     {
-      image: "https://images.unsplash.com/photo-1572025442646-866d16c84a54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "lovable-uploads/resized/Carport1.jpg",
       title: "Ladestationen für Elektrofahrzeuge",
       price: "individuell",
       capacity: "Diverses Volumen",
