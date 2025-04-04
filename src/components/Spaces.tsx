@@ -111,7 +111,7 @@ const Spaces: React.FC = () => {
         "Flexible Bestuhlung",
         "Catering-Option"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/1"
+      target: "https://raumfabrik.simplybook.it/v2/#book/service/2/count/1/"
     },
     {
       image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -136,7 +136,7 @@ const Spaces: React.FC = () => {
         "Veranstaltungstechnik verfügbar",
         "Networking Events möglich"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/3"
+      target: "https://raumfabrik.simplybook.it/v2/#book/service/8/count/1/"
     },
     {
       image: "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
