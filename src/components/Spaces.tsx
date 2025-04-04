@@ -98,7 +98,7 @@ const Spaces: React.FC = () => {
         "Inklusive Nebenkosten",
         "Meetingräume buchbar"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/2"
+      target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
       image: "/lovable-uploads/resized/Schulungsraum_big.jpg",
@@ -111,7 +111,7 @@ const Spaces: React.FC = () => {
         "Flexible Bestuhlung",
         "Catering-Option"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/2/count/1/"
+      target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
       image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -136,7 +136,7 @@ const Spaces: React.FC = () => {
         "Veranstaltungstechnik verfügbar",
         "Networking Events möglich"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/8/count/1/"
+      target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
       image: "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
@@ -147,7 +147,7 @@ const Spaces: React.FC = () => {
       features: [
         "WLAN & Drucker inklusive",
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/4"
+      target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
       image: "lovable-uploads/resized/Carport1.jpg",
@@ -159,7 +159,7 @@ const Spaces: React.FC = () => {
         "24/7 Zugang",
         "Sicherheitsüberwachung"
       ],
-      target: "https://raumfabrik.simplybook.it/v2/#book/service/5"
+      target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     }
   ];
 
