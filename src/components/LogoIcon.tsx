@@ -9,7 +9,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
   return (
     <div className={`flex items-center ${className}`}>
       <img 
-        src="/lovable-uploads/48a81688-8f24-40d4-b446-df073b4e51c5.png" 
+        src="/lovable-uploads/Logo-Raumfabrik-RGB.png" 
         alt="Raumfabrik Logo" 
         className="h-12 w-auto"
       />
