@@ -33,14 +33,14 @@ const CookieDialog: React.FC<CookieDialogProps> = ({ children }) => {
             <Shield className="text-raumfabrik-blue shrink-0 mt-1" size={24} />
             <div>
               <h3 className="text-lg font-semibold mb-2">Ihre Privatsphäre</h3>
-              <p>Wir verwenden <b>KEINE</b>Cookies. Sie brauchen sich um keine Einstellungen zu kümmern da ihr Besuch und ihre Daten nicht gespeichert werden!</p>
+              <p>Wir verwenden <b>KEINE</b> Cookies. Sie brauchen sich um keine Einstellungen zu kümmern, da Ihr Besuch und Ihre Daten nicht gespeichert werden!</p>
             </div>
           </section>
           
           <div className="space-y-4 border-t border-b py-4">
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="font-medium">Notwendige Cookies</h4>
+                <h4 className="font-medium">Notwendige Cookies (inaktiv)</h4>
                 <p className="text-sm text-gray-500">Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.</p>
               </div>
               <div className="bg-gray-200 px-3 py-1 rounded text-sm">Immer aktiv</div>
@@ -48,7 +48,7 @@ const CookieDialog: React.FC<CookieDialogProps> = ({ children }) => {
             
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="font-medium">Funktionale Cookies</h4>
+                <h4 className="font-medium">Funktionale Cookies (inaktiv)</h4>
                 <p className="text-sm text-gray-500">Diese Cookies ermöglichen erweiterte Funktionen und Personalisierung.</p>
               </div>
               <Button variant="outline" size="sm" className="h-8">Aktivieren</Button>
@@ -64,7 +64,7 @@ const CookieDialog: React.FC<CookieDialogProps> = ({ children }) => {
             
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="font-medium">Marketing Cookies</h4>
+                <h4 className="font-medium">Marketing Cookies (inaktiv)</h4>
                 <p className="text-sm text-gray-500">Diese Cookies werden verwendet, um Besucher auf Websites zu verfolgen. Die Absicht ist, Anzeigen zu schalten, die für den einzelnen Nutzer relevant und ansprechend sind.</p>
               </div>
               <Button variant="outline" size="sm" className="h-8">Aktivieren</Button>
