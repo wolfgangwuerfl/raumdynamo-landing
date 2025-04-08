@@ -56,7 +56,7 @@ const CookieDialog: React.FC<CookieDialogProps> = ({ children }) => {
             
             <div className="flex justify-between items-center">
               <div>
-                <h4 className="font-medium">Analytische Cookies</h4>
+                <h4 className="font-medium">Analytische Cookies (inaktiv)</h4>
                 <p className="text-sm text-gray-500">Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren.</p>
               </div>
               <Button variant="outline" size="sm" className="h-8">Aktivieren</Button>
