@@ -33,7 +33,7 @@ const CookieDialog: React.FC<CookieDialogProps> = ({ children }) => {
             <Shield className="text-raumfabrik-blue shrink-0 mt-1" size={24} />
             <div>
               <h3 className="text-lg font-semibold mb-2">Ihre Privatsphäre</h3>
-              <p>Wir verwenden Cookies, um Ihr Browsing-Erlebnis zu verbessern, personalisierte Inhalte anzuzeigen und den Verkehr auf unserer Website zu analysieren. Sie können wählen, welche Arten von Cookies Sie zulassen möchten.</p>
+              <p>Wir verwenden <b>KEINE</b>Cookies. Sie brauchen sich um keine Einstellungen zu kümmern da ihr Besuch und ihre Daten nicht gespeichert werden!</p>
             </div>
           </section>
           
