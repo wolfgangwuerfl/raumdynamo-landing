@@ -99,9 +99,7 @@ const Spaces: React.FC = () => {
   const spaces = [
     {
       images: [
-        "/lovable-uploads/resized/Office.jpg",
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        "/lovable-uploads/resized/Office.jpg"
       ],
       title: "Büroräume",
       price: "Ab 200€ pro Monat",
@@ -118,8 +116,6 @@ const Spaces: React.FC = () => {
     {
       images: [
         "/lovable-uploads/resized/Schulungsraum_big.jpg",
-        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1528238646472-f2366160b6c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
       ],
       title: "Konferenz/Schulungsräume",
       price: "Ab 100€ pro Tag",
@@ -170,8 +166,6 @@ const Spaces: React.FC = () => {
     {
       images: [
         "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1462396240927-52058a6a84ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
       ],
       title: "Ausstellungs- und Eventflächen",
       price: "Ab 15€ pro Tag",
@@ -185,8 +179,7 @@ const Spaces: React.FC = () => {
     {
       images: [
         "lovable-uploads/resized/Carport1.jpg",
-        "lovable-uploads/resized/Carport2.jpg",
-        "https://images.unsplash.com/photo-1586588337067-36f4a41624aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        "lovable-uploads/resized/Carport2.jpg"
       ],
       title: "Ladestationen für Elektrofahrzeuge",
       price: "individuell",
