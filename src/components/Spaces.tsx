@@ -4,11 +4,19 @@ import { ArrowRight, X } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
-  DialogTrigger
+  DialogTrigger,
+  DialogTitle
 } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "@/components/ui/carousel";
 
 interface SpaceCardProps {
-  image: string;
+  images: string[];
   title: string;
   price: string;
   capacity: string;
@@ -17,36 +25,39 @@ interface SpaceCardProps {
   target: string;
 }
 
-const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, size, features, target }) => {
+const SpaceCard: React.FC<SpaceCardProps> = ({ images, title, price, capacity, size, features, target }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-gray-100 animate-fade-in">
       <div className="h-64 overflow-hidden relative">
         <Dialog>
           <DialogTrigger asChild>
             <img
-              src={image}
+              src={images[0]}
               alt={title}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105 cursor-pointer"
             />
           </DialogTrigger>
-          <DialogContent className="p-0 max-w-4xl bg-transparent border-none">
-            <div className="relative">
-              <img
-                src={image}
-                alt={title}
-                className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
-              />
-              <button
-                className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  const closeButton = document.querySelector('[data-state="open"] [aria-label="Close"]') as HTMLButtonElement;
-                  if (closeButton) closeButton.click();
-                }}
-              >
-                <X className="h-6 w-6" />
-              </button>
-            </div>
+          <DialogContent className="p-4 max-w-4xl bg-white border-none rounded-lg">
+            <DialogTitle className="sr-only">{title} Bilder</DialogTitle>
+            <Carousel className="w-full">
+              <CarouselContent>
+                {images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative">
+                      <img
+                        src={image}
+                        alt={`${title} ${index + 1}`}
+                        className="w-full h-auto max-h-[70vh] object-contain rounded-lg mx-auto"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2 lg:-left-12" />
+              <CarouselNext className="right-2 lg:-right-12" />
+            </Carousel>
           </DialogContent>
         </Dialog>
       </div>
@@ -87,7 +98,11 @@ const SpaceCard: React.FC<SpaceCardProps> = ({ image, title, price, capacity, si
 const Spaces: React.FC = () => {
   const spaces = [
     {
-      image: "/lovable-uploads/resized/Office.jpg",
+      images: [
+        "/lovable-uploads/resized/Office.jpg",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      ],
       title: "Büroräume",
       price: "Ab 200€ pro Monat",
       capacity: "1-10 Personen",
@@ -101,7 +116,11 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
-      image: "/lovable-uploads/resized/Schulungsraum_big.jpg",
+      images: [
+        "/lovable-uploads/resized/Schulungsraum_big.jpg",
+        "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1528238646472-f2366160b6c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      ],
       title: "Konferenz/Schulungsräume",
       price: "Ab 100€ pro Tag",
       capacity: "2-30 Personen",
@@ -114,7 +133,11 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
-      image: "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1573348722421-bda500c94d0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1470224114660-3f6686c562eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      ],
       title: "Parkplätze",
       price: "Für Mieter kostenlos",
       capacity: "Bis 50 Fahrzeuge",
@@ -125,7 +148,13 @@ const Spaces: React.FC = () => {
       target: ""
     },
     {
-      image: "/lovable-uploads/resized/Cafeteria.jpg",
+      images: [
+        "/lovable-uploads/resized/Cafeteria.jpg",
+        "/lovable-uploads/resized/Cafeteria2.jpg",
+        "/lovable-uploads/resized/Cafeteria3.jpg",
+        "/lovable-uploads/resized/Cafeteria4.jpg",
+        "/lovable-uploads/resized/Cafeteria5.jpg"
+      ],
       title: "Cafeteria",
       price: "Ab 200€ pro Tag",
       capacity: "Bis 100 Personen",
@@ -139,7 +168,11 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
-      image: "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      images: [
+        "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1462396240927-52058a6a84ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      ],
       title: "Ausstellungs- und Eventflächen",
       price: "Ab 15€ pro Tag",
       capacity: "Flexibel",
@@ -150,7 +183,11 @@ const Spaces: React.FC = () => {
       target: "https://raumfabrik.simplybook.it/v2/#book/count/1/"
     },
     {
-      image: "lovable-uploads/resized/Carport1.jpg",
+      images: [
+        "lovable-uploads/resized/Carport1.jpg",
+        "lovable-uploads/resized/Carport2.jpg",
+        "https://images.unsplash.com/photo-1586588337067-36f4a41624aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      ],
       title: "Ladestationen für Elektrofahrzeuge",
       price: "individuell",
       capacity: "Diverses Volumen",
@@ -180,7 +217,7 @@ const Spaces: React.FC = () => {
           {spaces.map((space, index) => (
             <SpaceCard
               key={index}
-              image={space.image}
+              images={space.images}
               title={space.title}
               price={space.price}
               capacity={space.capacity}
@@ -206,24 +243,13 @@ const Spaces: React.FC = () => {
                     className="w-full h-auto rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity"
                   />
                 </DialogTrigger>
-                <DialogContent className="p-0 max-w-5xl bg-transparent border-none">
-                  <div className="relative">
-                    <img
-                      src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png"
-                      alt="Raumfabrik Gebäude"
-                      className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
-                    />
-                    <button
-                      className="absolute top-2 right-2 bg-black/50 rounded-full p-1 text-white hover:bg-black/70 transition-colors"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        const closeButton = document.querySelector('[data-state="open"] [aria-label="Close"]') as HTMLButtonElement;
-                        if (closeButton) closeButton.click();
-                      }}
-                    >
-                      <X className="h-6 w-6" />
-                    </button>
-                  </div>
+                <DialogContent className="p-4 max-w-5xl bg-white border-none">
+                  <DialogTitle className="sr-only">Raumfabrik Gebäude</DialogTitle>
+                  <img
+                    src="/lovable-uploads/7a154670-89c3-4c09-a4cc-cee4ea325f0e.png"
+                    alt="Raumfabrik Gebäude"
+                    className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                  />
                 </DialogContent>
               </Dialog>
             </div>
