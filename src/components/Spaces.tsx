@@ -165,7 +165,9 @@ const Spaces: React.FC = () => {
     },
     {
       images: [
-        "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "lovable-uploads/resized/Foyer1.jpg",
+        "lovable-uploads/resized/Foyer2.jpg",
+        "lovable-uploads/resized/Foyer3.jpg",
       ],
       title: "Ausstellungs- und Eventflächen",
       price: "Ab 15€ pro Tag",
