@@ -115,7 +115,7 @@ const Spaces: React.FC = () => {
     },
     {
       images: [
-        "/lovable-uploads/resized/Schulungsraum_big.jpg",
+        "/lovable-uploads/resized/Schulungsraum.jpeg",
       ],
       title: "Konferenz/Schulungsräume",
       price: "Ab 100€ pro Tag",
@@ -130,9 +130,7 @@ const Spaces: React.FC = () => {
     },
     {
       images: [
-        "https://images.unsplash.com/photo-1559223607-a43f990c095d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1573348722421-bda500c94d0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1470224114660-3f6686c562eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+        "/lovable-uploads/resized/Parkplatz.jpg",
       ],
       title: "Parkplätze",
       price: "Für Mieter kostenlos",
