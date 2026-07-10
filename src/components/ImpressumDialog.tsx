@@ -35,7 +35,7 @@ const ImpressumDialog: React.FC<ImpressumDialogProps> = ({ children }) => {
           <section>
             <h3 className="text-lg font-semibold mb-2">Kontakt</h3>
             <p>Telefon: +49 (0) 03683 798 400<br />
-            E-Mail: info@raumfabrik.de</p>
+            E-Mail: info@raumfabrik.gmbh</p>
           </section>
           
           <section>
