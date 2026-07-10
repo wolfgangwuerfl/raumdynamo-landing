@@ -52,7 +52,7 @@ const PresseDialog: React.FC<PresseDialogProps> = ({ children }) => {
             <div>
               <p><strong>Julia Müller</strong></p>
               <p>Leiterin Unternehmenskommunikation</p>
-              <p>E-Mail: presse@raumfabrik.de</p>
+              <p>E-Mail: presse@raumfabrik.gmbh</p>
               <p>Telefon: +49 30 1234567-89</p>
             </div>
           </section>
