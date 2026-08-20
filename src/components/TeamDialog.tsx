@@ -40,9 +40,9 @@ const TeamDialog: React.FC<TeamDialogProps> = ({ children }) => {
             <h3 className="text-lg font-semibold mb-2">Kundenbetreuung</h3>
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium">Daniela Filaj</h4>
+                <h4 className="font-medium">Michael Arndt</h4>
                 <p className="text-sm text-gray-600">Verwaltung</p>
-                <p>Daniela verantwortet die operativen Prozesse und sorgt dafür, dass unser Standort reibungslos funktioniert.</p>
+                <p>Michael verantwortet die operativen Prozesse und sorgt dafür, dass unser Standort reibungslos funktioniert.</p>
               </div>
             </div>
           </section>
